@@ -12,7 +12,7 @@ groupadd -r testuser --gid=999; \
 useradd -r -g testuser --uid=999 --shell=/bin/bash testuser;
 
 # get nuclei
-RUN wget https://github.com/projectdiscovery/nuclei/releases/download/v2.3.0/nuclei_2.3.0_linux_arm64.tar.gz
+RUN wget https://github.com/projectdiscovery/nuclei/releases/download/v2.3.1/nuclei_2.3.1_linux_arm64.tar.gz
 RUN tar -xzf nuclei*.tar.gz
 RUN mv nuclei /usr/local/bin/
 
